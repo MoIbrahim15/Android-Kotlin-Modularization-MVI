@@ -7,7 +7,6 @@ plugins {
 
 android {
     compileSdkVersion(AndroidConfig.COMPILE_SDK_VERSION)
-    buildToolsVersion(AndroidConfig.BUILD_TOOLS_VERSION)
 
     defaultConfig {
         applicationId = AndroidConfig.ID
@@ -38,14 +37,15 @@ android {
 }
 
 dependencies {
-    implementation(Libraries.kotlin_stdlib)
-    implementation(Libraries.appcompat)
-    implementation(Libraries.core)
-    implementation(Libraries.material)
-    implementation(Libraries.constraint)
-    implementation(Libraries.navigation_fragment)
-    implementation(Libraries.navigation_ui)
-    testImplementation(TestLibraries.junit)
-    androidTestImplementation(TestLibraries.junit_android)
-    androidTestImplementation(TestLibraries.espresso)
+    implementation(LibraryDependency.KOTLIN_STD)
+    implementation(LibraryDependency.APPCOMPAT)
+    implementation(LibraryDependency.CORE)
+    implementation(LibraryDependency.MATERIAL)
+    implementation(LibraryDependency.CONSTRAINT)
+    implementation(LibraryDependency.NAVIGATION_FRAGMENT)
+    implementation(LibraryDependency.NAVIGATION_UI)
+
+    testImplementation(TestLibraryDependency.JUNIT)
+    androidTestImplementation(TestLibraryDependency.JUNIT_ANDROID)
+    androidTestImplementation(TestLibraryDependency.ESPRESSO)
 }
