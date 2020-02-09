@@ -1,0 +1,31 @@
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion(AndroidConfig.COMPILE_SDK_VERSION)
+
+    defaultConfig {
+        minSdkVersion(AndroidConfig.MIN_SDK_VERSION)
+        targetSdkVersion(AndroidConfig.TARGET_SDK_VERSION)
+        versionCode AndroidConfig.VERSION_CODE
+        versionName  AndroidConfig.VERSION_NAME
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
+    }
+}
+
+dependencies {
+    implementation(LibraryDependency.KOTLIN_STD)
+}
