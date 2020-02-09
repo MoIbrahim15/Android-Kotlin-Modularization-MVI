@@ -5,6 +5,7 @@ object CoreVersion{
 }
 
 object GradlePluginId {
+    const val ANDROID_LIB  = "com.android.library"
     const val ANDROID_APP = "com.android.application"
     const val ANDROID = "android"
     const val ANDROID_EXT = "android.extensions"
