@@ -1,2 +1,2 @@
 rootProject.buildFileName = "build.gradle.kts"
-include (":app", ":dashboard")
+include (":app",":navigation", ":dashboard")
