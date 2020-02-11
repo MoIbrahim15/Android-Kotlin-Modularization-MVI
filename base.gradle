@@ -1,5 +1,5 @@
-apply plugin: 'kotlin-android'
-apply plugin: 'kotlin-android-extensions'
+apply plugin: GradlePluginId.ANDROID
+apply plugin: GradlePluginId.ANDROID_EXT
 
 android {
     compileSdkVersion(AndroidConfig.COMPILE_SDK_VERSION)

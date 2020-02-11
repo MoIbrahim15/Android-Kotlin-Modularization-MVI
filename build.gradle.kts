@@ -6,7 +6,7 @@ buildscript {
     }
     dependencies {
         classpath (GradleClasspath.ANDROID_GRADLE)
-        classpath(kotlin(GradleClasspath.KOTLIN_PlUGIN, version = CoreVersion.KOTLIN))
+        classpath (kotlin(GradleClasspath.KOTLIN_PlUGIN, version = CoreVersion.KOTLIN))
         classpath (GradleClasspath.SAFE_ARGS)
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -21,8 +21,6 @@ allprojects {
     }
 }
 
-tasks {
-    registering(Delete::class) {
-        delete (buildDir)
-    }
+tasks.register("clean", Delete::class) {
+    delete(rootProject.buildDir)
 }

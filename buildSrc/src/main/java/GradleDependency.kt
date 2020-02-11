@@ -5,10 +5,10 @@ object CoreVersion{
 }
 
 object GradlePluginId {
-    const val ANDROID = "android"
     const val ANDROID_APP = "com.android.application"
     const val ANDROID_LIB  = "com.android.library"
-    const val ANDROID_EXT = "android.extensions"
+    const val ANDROID = "kotlin-android"
+    const val ANDROID_EXT = "kotlin-android-extensions"
     const val SAFE_ARGS = "androidx.navigation.safeargs"
     const val BASE_GRADLE = "base.gradle"
 }
