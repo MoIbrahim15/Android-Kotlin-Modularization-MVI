@@ -1,13 +1,12 @@
-apply (from = "$rootDir/${GradlePluginId.BASE_GRADLE}")
-
 plugins {
     id(GradlePluginId.ANDROID_LIB)
+    id(GradlePluginId.BASE_GRADLE_PLUGIN)
     id(GradlePluginId.SAFE_ARGS)
 }
 
 android {
-    defaultConfig {
-        testInstrumentationRunner = AndroidConfig.TEST_INSTRUMENTATION_RUNNER
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8.toString()
     }
 }
 

@@ -1,7 +1,7 @@
 object CoreVersion{
     const val KOTLIN = "1.3.61"
     const val NAVIGATION = "2.2.0"
-    const val ANDROID_GRADLE = "4.0.0-alpha09"
+    const val ANDROID_GRADLE = "3.5.3"
 }
 
 object GradlePluginId {
@@ -10,7 +10,7 @@ object GradlePluginId {
     const val ANDROID = "kotlin-android"
     const val ANDROID_EXT = "kotlin-android-extensions"
     const val SAFE_ARGS = "androidx.navigation.safeargs"
-    const val BASE_GRADLE = "base.gradle"
+    const val BASE_GRADLE_PLUGIN = "base-gradle-plugin"
 }
 
 object GradleClasspath {
