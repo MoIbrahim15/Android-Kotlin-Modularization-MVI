@@ -4,12 +4,6 @@ plugins {
     id(GradlePluginId.SAFE_ARGS)
 }
 
-android {
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8.toString()
-    }
-}
-
 dependencies {
     implementation(LibraryDependency.APPCOMPAT)
     implementation(LibraryDependency.CORE)
