@@ -4,6 +4,6 @@ plugins {
 }
 
 dependencies {
-    implementation (project(ModulesDependency.NAVIGATION))
-    implementation (project(ModulesDependency.DASHBOARD))
+    implementation(project(ModulesDependency.NAVIGATION))
+    implementation(project(ModulesDependency.DASHBOARD))
 }

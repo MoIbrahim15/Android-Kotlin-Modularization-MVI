@@ -1,9 +1,4 @@
 package base_plugin
-
-import AndroidConfig
-import BuildType
-import GradlePluginId
-import LibraryDependency
 import com.android.build.gradle.BaseExtension
 import org.gradle.api.Project
 import org.gradle.api.JavaVersion

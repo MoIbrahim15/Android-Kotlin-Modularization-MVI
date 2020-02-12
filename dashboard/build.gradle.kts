@@ -18,7 +18,5 @@ dependencies {
     implementation(LibraryDependency.NAVIGATION_FRAGMENT)
     implementation(LibraryDependency.NAVIGATION_UI)
 
-    testImplementation(TestLibraryDependency.JUNIT)
-    androidTestImplementation(TestLibraryDependency.JUNIT_ANDROID)
-    androidTestImplementation(TestLibraryDependency.ESPRESSO)
+    addTestDependencies()
 }
