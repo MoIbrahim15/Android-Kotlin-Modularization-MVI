@@ -4,6 +4,7 @@ object CoreVersion{
     const val ANDROID_GRADLE = "3.5.3"
     const val KTLINT_GRADLE = "9.2.1"
     const val KTLINT = "0.34.2"
+    const val DETEKT = "1.0.0"
 }
 
 object GradlePluginId {
@@ -15,6 +16,7 @@ object GradlePluginId {
     const val BASE_GRADLE_PLUGIN = "base-gradle-plugin"
     const val KTLINT_GRADLE = "org.jlleitschuh.gradle.ktlint"
     const val KTLINT_MAVEN =  "https://plugins.gradle.org/m2/"
+    const val DETEKT = "io.gitlab.arturbosch.detekt"
 }
 
 object GradleClasspath {
