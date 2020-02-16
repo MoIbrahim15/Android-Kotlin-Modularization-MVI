@@ -1,4 +1,4 @@
-package com.mi.dashboard.di
+package com.mi.dashboard.koin
 
 import com.mi.dashboard.DashboardViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel

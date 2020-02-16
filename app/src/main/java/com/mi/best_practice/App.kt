@@ -1,7 +1,7 @@
 package com.mi.best_practice
 
 import android.app.Application
-import com.mi.best_practice.di.appModules
+import com.mi.best_practice.koin.appModules
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
