@@ -8,4 +8,5 @@ object TestLibraryDependency{
     const val JUNIT = "junit:junit:${Version.JUNIT}"
     const val JUNIT_ANDROID = "androidx.test.ext:junit:${Version.JUNIT_ANDROID}"
     const val ESPRESSO = "androidx.test.espresso:espresso-core:${Version.ESPRESSO}"
+    const val KOIN ="org.koin:koin-test:${LibraryDependency.Version.KOIN}"
 }

@@ -46,4 +46,8 @@ internal fun Project.configureAndroidApp() =  this.extensions.getByType<AndroidB
 
 internal fun Project.configureDependencies() = this.dependencies {
     add("implementation", LibraryDependency.KOTLIN_STD)
+    //koin - di
+    add("implementation", LibraryDependency.KOIN)
+    add("implementation", LibraryDependency.KOIN_VIEWMODEL)
+    add("implementation", LibraryDependency.KOIN_SCOPE)
 }
